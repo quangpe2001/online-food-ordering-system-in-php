@@ -391,7 +391,7 @@ if (!$error && isset($_REQUEST["delete"]) && $_REQUEST["delete"]!=basename($_SER
 // Connect to the database, set charset and execute pre-queries
 
 if (!$error && !TESTMODE)
-{ $mysqli = new mysqli($db_server, $db_username, $db_password, $db_name,3308);
+{ $mysqli = new mysqli($db_server, $db_username, $db_password, $db_name);
   
   if (mysqli_connect_error()) 
   { echo ("<p class=\"error\">Database connection failed due to ".mysqli_connect_error()."</p>\n");
